@@ -5,19 +5,154 @@
 }
 
 body {
- background-color: lightcyan; 
+ background-color: #FFAFCC; 
 }
-
-/* STYLE TEXT */
 
 h1 {
-  color: navy;
+   color: #BDE0FE;
+   background-color: #CDB4DB;
+   padding: 1em;
 }
 
+#intro{
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+
+p {
+   font-size: 1.2em;
+   color: #FFF5EB;
+   margin-bottom: 0.5em;
+}
+/* STYLE TEXT */
+
+img {
+   width: 50%;
+}
+
+#facts {
+   color: #A2D2FF;
+   font-size: 2em;
+   background-color: #CDB4DB;
+}
+
+h2 {
+     text-align: center;
+     color: #CB94EA;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+}
+
+h3{
+   color:#CB94EA;
+}
 /* STYLE IMAGES */
+img {
+   display: block;
+   width: 90%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+
+   border-style: solid;
+   border-color: #fbedb6;
+   border-width: 8px;
+   border-radius: 5px;
+}
+
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.flex-item {
+   flex-basis: 100%;
+   margin: 1%;
+}
 
 /* STYLE NAV BAR */
+#bars {
+     list-style-type: none;
+     background-color: #FFC8DD;
+     overflow: hidden;
+}
 
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover{
+   color: #A2D2FF;
+}
+
+a {
+   color: #CDB4DB;
+}
+
+main li {
+  display: list-item;
+  padding: 0.2em 0;
+}
 /* STYLE BUTTONS */
 
 /* ADD MORE! */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 850px) {
+   .flex-container {
+      flex-wrap: wrap;
+   }
+}
+
+header {
+   padding-left: 20%;
+   padding-right: 20%;
+}
+
+main {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+/*style generate a fact key feature*/
+.genFact {
+   background: #FFC8DD;
+   border-radius: 10px;
+   border-style: none;
+
+   padding: 15px;
+
+   margin-top: 30px;
+   margin-left: 35%;
+   margin-right: 35%;
+
+   font-family: "Times New Roman", sans-serif;
+   font-size: 1.2em;
+   text-align: center;
+   line-height: 1.2em;
+   color: #CB94EA;
+}
+
+#fact{
+   border-style: none;
+
+   padding: 15px;
+
+   margin-top: 30px;
+   margin-left: 15%;
+   margin-right: 15%;
+
+   font-family: "times new roman", sans-serif;
+   font-size: 2em;
+   text-align: center;
+   line-height: 1.2em;
+   color: #CB94EA;
+   background-color: #FFC8DD
+}
